@@ -15,7 +15,13 @@ def factorial(num):
 
 
 def convert_temperature(value, unit):
-    pass
+    if unit == 'C':
+        result = (value * (9 / 5)) + 32
+    else:
+        result = (value - 32) * (5/9)
+
+    result = round(result, 2)
+    return result
 
 def lcm(list):
     pass
