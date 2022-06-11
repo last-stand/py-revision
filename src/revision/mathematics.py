@@ -5,7 +5,13 @@ def sum(arg):
     return total
 
 def factorial(num):
-    pass
+    if num == 0:
+        return 1
+    else:
+        for i in range(num + 1):
+            result = num * factorial(num - 1)
+        
+        return result
 
 def convert_temperature(value, unit):
     pass
