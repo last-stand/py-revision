@@ -6,3 +6,13 @@ def sum(arg):
 
 def factorial(num):
     pass
+
+def convert_temperature(value, unit):
+    pass
+
+def lcm(list):
+    pass
+
+def hcf(list):
+    pass
+
