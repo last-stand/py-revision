@@ -76,7 +76,7 @@ class Test(unittest.TestCase):
 
         result = lcm(data)
 
-        self.assertEqual(data, 360)
+        self.assertEqual(result, 360)
         
     def test_lcm_of_given_multiple_numbers_is_250(self):
         """
@@ -86,17 +86,17 @@ class Test(unittest.TestCase):
 
         result = lcm(data)
 
-        self.assertEqual(data, 250)
+        self.assertEqual(result, 250)
 
-    def test_hcf_of_72_and_120_is_360(self):
+    def test_hcf_of_72_and_120_is_24(self):
         """
-        Test that LCM of 72 and 120 is 360
+        Test that HCF of 72 and 120 is 24
         """
         data = [72, 120]
 
         result = hcf(data)
 
-        self.assertEqual(data, 360)
+        self.assertEqual(result, 24)
 
     def test_hcf_of_given_multiple_numbers_is_8(self):
         """
@@ -106,7 +106,7 @@ class Test(unittest.TestCase):
 
         result = hcf(data)
 
-        self.assertEqual(data, 8)
+        self.assertEqual(result, 8)
 
     
 
