@@ -38,7 +38,7 @@ class Test(unittest.TestCase):
         """
 
         result = convert_temperature(0, 'C')
-
+    
         self.assertEqual(result, 32)
     
     def test_24_degree_celsius_is_equal_to_75_point_2_degree_fahrenheit(self):
@@ -78,15 +78,15 @@ class Test(unittest.TestCase):
 
         self.assertEqual(result, 360)
         
-    def test_lcm_of_given_multiple_numbers_is_250(self):
+    def test_lcm_of_given_multiple_numbers_is_1250(self):
         """
-        Test that LCM of 25, 50, 125, 625 is 250
+        Test that LCM of 25, 50, 125, 625 is 1250
         """
         data = [25, 50, 125, 625]
 
         result = lcm(data)
 
-        self.assertEqual(result, 250)
+        self.assertEqual(result, 1250)
 
     def test_hcf_of_72_and_120_is_24(self):
         """

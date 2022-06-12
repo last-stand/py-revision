@@ -1,3 +1,4 @@
+import math
 def sum(arg):
     total = 0
     for val in arg:
@@ -21,8 +22,25 @@ def convert_temperature(value, unit):
 
 
 def lcm(list):
-    pass
+    lcm = list[0]
+    n = len(list)
+    for i in range(1, n):
+        lcm = lcmOfTwoNumbers(lcm, list[i])
 
+    return lcm
+  
 def hcf(list):
-    pass
+    hcf = list[0]
+    n = len(list)
+    for i in range(1, n):
+        hcf = hcfOfTwoNumbers(hcf, list[i])
 
+    return hcf
+    
+def hcfOfTwoNumbers(num1,num2):
+    if num2 == 0:
+        return num1
+    return hcfOfTwoNumbers(num2, num1%num2)
+
+def lcmOfTwoNumbers(num1,num2):
+    return (num1 * num2) // hcfOfTwoNumbers(num1,num2)
