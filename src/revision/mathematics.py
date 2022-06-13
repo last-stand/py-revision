@@ -44,3 +44,8 @@ def hcfOfTwoNumbers(num1,num2):
 
 def lcmOfTwoNumbers(num1,num2):
     return (num1 * num2) // hcfOfTwoNumbers(num1,num2)
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return (fibonacci(n - 1) + fibonacci(n - 2))
