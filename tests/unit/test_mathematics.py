@@ -1,6 +1,6 @@
 import unittest
 
-from src.revision.mathematics import sum, factorial, convert_temperature, lcm, hcf
+from src.revision.mathematics import sum, factorial, convert_temperature, lcm, hcf, fibonacci
 
 
 class Test(unittest.TestCase):
@@ -108,7 +108,21 @@ class Test(unittest.TestCase):
 
         self.assertEqual(result, 8)
 
-    
+    def test_fifth_term_of_fibonacci_is_5(self):
+        """
+        Test that sum of 3rd and 4th term is 5th that is 5
+        """
+        result = fibonacci(5)
+
+        self.assertEqual(result, 5)
+
+    def test_fourteenth_term_of_fibonacci_is_377(self):
+        """
+        Test that sum of 12th and 13th term is 14th that is 377
+        """
+        result = fibonacci(14)
+
+        self.assertEqual(result, 377)
 
 if __name__ == '__main__':
     unittest.main()
